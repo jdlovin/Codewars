@@ -58,4 +58,10 @@ public class SolutionTest {
     private int getActualFor(int... numbers) {
         return Solution2.stray(numbers);
     }
+    @Test
+    public void testSomething2() {
+        assertEquals("aaaaa",Repeater.repeat("a",5));
+        assertEquals("NaNaNaNaNaNaNaNaNaNaNaNaNaNaNaNa",Repeater.repeat("Na", 16));
+        assertEquals("Wub Wub Wub Wub Wub Wub ",Repeater.repeat("Wub ", 6));
+    }
 }
